@@ -27,6 +27,4 @@ export const run = ( component ) => {
         renderResult( weather )
 
     } )
-
-
 }

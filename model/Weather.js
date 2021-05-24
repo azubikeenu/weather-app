@@ -3,7 +3,6 @@ export default class Weather {
     constructor( query ) {
         this.city = query
     }
-
     async searchWeather () {
         try {
             const res = await axios( 'http://api.openweathermap.org/data/2.5/weather', {
@@ -17,17 +16,9 @@ export default class Weather {
             this.tempreature = res.data.main.temp;
         } catch ( err ) {
             console.log( err )
-
         }
-
-
     }
-
     formatTemperature () {
         this.tempreature = ( ( this.tempreature * 1.8 ) + 32 ).toFixed( 2 ) + 'F.';
     }
-
-
-
-
 }

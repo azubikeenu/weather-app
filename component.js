@@ -10,5 +10,4 @@ export class UIComponent {
         this.button.addEventListener( 'click', func )
     }
 
-
 }
